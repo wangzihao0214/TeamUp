@@ -1,0 +1,269 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Bold.ttf");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(180deg, rgba(252, 255, 86, 0.2) 0%, rgba(255, 106, 86, 0.2) 100%);
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+#event-image {
+  margin-top: 18px;
+  margin-left: 0;
+  width: 600px;
+  height: 450px;
+}
+
+#purchase {
+  height: 0;
+  margin: 0 auto 20px 20px;
+}
+
+#purchase button {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 45px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+
+  width: 326px;
+  height: 69px;
+  background: linear-gradient(0deg, #FF6A56, #FF6A56);
+  border: 1px solid #FF6A56;
+  box-sizing: border-box;
+  border-radius: 40px;
+  justify-content: center;
+}
+
+#go-back {
+  margin: 0 auto 0 20px;
+  height: 0;
+  padding-bottom: 80px;
+}
+
+#go-back button {
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+
+  width: 161px;
+  height: 59px;
+  background: linear-gradient(180deg, rgba(252, 255, 86, 0.2) 0%, rgba(255, 106, 86, 0.2) 100%);
+  border: 1px solid #FF6A56;
+  box-sizing: border-box;
+  border-radius: 40px;
+  justify-content: center;
+}
+
+#go-back img {
+    margin-right: 20px;
+}
+
+.profile-btn-wrapper {
+    float: right;
+}
+
+.profile-button {
+    margin-left: 30px;
+    transform: scaleX(-1);
+}
+
+.header-content {
+  background-size: contain;
+  height: calc(100vh - 88px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper{
+  width: 1200px;
+  align-items: center;
+  background: #FFFFFF;
+  background-size: contain;
+  box-shadow: 4px 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 5px;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 10px;
+  top: 75px;
+}
+
+header {
+  display: flex;
+  background: #FFFFFF;
+  margin-top: 32px;
+  margin-left: 48px;
+  margin-bottom: 24px;
+}
+
+header #description {
+  width: 400px;
+  height: 90px;
+}
+
+header #edit button {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+
+  width: 100px;
+  height: 50px;
+  background: linear-gradient(0deg, #FF6A56, #FF6A56);
+  border: 1px solid #FF6A56;
+  box-sizing: border-box;
+  border-radius: 40px;
+  justify-content: center;
+}
+
+.user-info {
+    margin: 0 130px;
+}
+
+#num {
+  margin-top: 30px;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 75px;
+  color: #FF6A56;
+  margin-bottom: 30px;
+}
+
+#name{
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 45px;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.extra-info {
+  width: 40%;
+}
+
+.extra-info p {
+  margin-top: 12px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  color: #000000;
+  width: 100%;
+}
+
+header p{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+
+hr {
+  height: 0;
+  border: 1px solid #7D7D7D;
+}
+
+h1.entry {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  color: #000000;
+  padding-left: 77px;
+  display: inline-block;
+}
+
+.buy-btn {
+  display: inline-block;
+  width: 40px;
+  position: relative;
+  bottom: 5px;
+}
+
+.btn-page {
+  display: inline-block;
+  width: 40px;
+  position: relative;
+  bottom: 5px;
+}
+
+.btn-page button {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+
+  width: 25px;
+  height: 25px;
+  background: linear-gradient(0deg, #FF6A56, #FF6A56);
+  border: 1px solid #FF6A56;
+  box-sizing: border-box;
+  border-radius: 40px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.form-control{
+  width: 20%;
+  display: inline-block;
+  margin-left: 50px;
+}
+
+.card-container {
+  margin: 20px auto 0;
+  width: 1000px;
+  height: auto;
+  padding-bottom: 20px;
+  display: flex;
+}
+
+.card-container h3 {
+  margin: 0 auto;
+}
+
+.card-container table{
+  width: 100%;
+}
+
+#table-num{
+  width: 5%;
+}
+
+#table-name{
+  width: 20%;
+}
+
+#table-num_member{
+  width: 15%;
+}
+
+#table-description{
+  width: 60%;
+}
+
+#description{
+  max-width: 0;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}

@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Bold.ttf");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(180deg, rgba(252, 255, 86, 0.2) 0%, rgba(255, 106, 86, 0.2) 100%);
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+
+.header-container {
+  background-size: contain;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper{
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+
+header img {
+  margin-right: 48px;
+}
+
+header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 100px;
+  line-height: 122px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+}
+
+.subtitle h2 {
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 105px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(180deg, #FF6A56 0%, #FCFF56 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 36px;
+  justify-content: center;
+}
+
+.btn button {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+
+  width: 200px;
+  height: 70px;
+  background: linear-gradient(0deg, #FF6A56, #FF6A56);
+  border: 1px solid #FF6A56;
+  box-sizing: border-box;
+  border-radius: 40px;
+  justify-content: center;
+}

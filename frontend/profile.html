@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.88.1">
+  <title>Profile</title>
+
+  <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./assets/css/profile.css" rel="stylesheet">
+
+  <script src="./assets/js/sdk/lib/axios/dist/axios.standalone.js"></script>
+  <script src="./assets/js/sdk/lib/CryptoJS/rollups/hmac-sha256.js"></script>
+  <script src="./assets/js/sdk/lib/CryptoJS/rollups/sha256.js"></script>
+  <script src="./assets/js/sdk/lib/CryptoJS/components/hmac.js"></script>
+  <script src="./assets/js/sdk/lib/CryptoJS/components/enc-base64.js"></script>
+  <script src="./assets/js/sdk/lib/url-template/url-template.js"></script>
+  <script src="./assets/js/sdk/lib/apiGatewayCore/sigV4Client.js"></script>
+  <script src="./assets/js/sdk/lib/apiGatewayCore/apiGatewayClient.js"></script>
+  <script src="./assets/js/sdk/lib/apiGatewayCore/simpleHttpClient.js"></script>
+  <script src="./assets/js/sdk/lib/apiGatewayCore/utils.js"></script>
+  <script src="./assets/js/sdk/apigClient.js"></script>
+</head>
+
+<body>
+  <div class="btn" id="go-back">
+      <button onclick="home()">
+        <img src="assets/images/vector.svg" alt="">
+        Teamup
+      </button>
+  </div>
+  <div class="header-content">
+    <div class="wrapper">
+      <header id="header">
+        <img id="profile-image" src="assets/images/empty_profile_image.svg" alt="">
+        <div class="user-info">
+          <h1 id="name">Loading user...</h1>
+          <p id="description">
+            NA
+          </p>
+            <p id="email"><b>Email: </b>NA</p>
+        </div>
+        <div class="extra-info">
+          <p id="city">City: NA</p>
+          <p id="age">Age: NA</p>
+        </div>
+      </header>
+
+      <hr>
+      <div class="teams">
+        <h1 class="entry">Teams</h1>
+        <div class="btn-page">
+            <button onclick="turn_page(-1, 'team-cards')"> < </button>
+        </div>
+        <div class="btn-page">
+            <button onclick="turn_page(1, 'team-cards')"> > </button>
+        </div>
+        <div class="card-container" id="team-cards">
+          <h3>No team</h3>
+        </div>
+      </div>
+
+       <hr>
+       <div class="artists">
+         <h1 class="entry">Top Artists</h1>
+         <div class="btn-page">
+             <button onclick="turn_page(-1, 'artist-cards')"> < </button>
+         </div>
+         <div class="btn-page">
+             <button onclick="turn_page(1, 'artist-cards')"> > </button>
+         </div>
+         <div class="card-container" id="artist-cards">
+           <h3>No top artists</h3>
+         </div>
+       </div>
+
+    </div>
+  </div>
+
+  <script>
+    var sdk = apigClientFactory.newClient({
+      apiKey: "PcPItZ1OE54Zi0YroJUtk9rEeB9cD69h7CMGseE6"
+    });
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.88.1">
+  <title>Edit</title>
+
+  <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./assets/css/edit_team.css" rel="stylesheet">
+
+  <script src="./assets/js/sdk/lib/axios/dist/axios.standalone.js"></script>
+  <script src="./assets/js/sdk/lib/CryptoJS/rollups/hmac-sha256.js"></script>
+  <script src="./assets/js/sdk/lib/CryptoJS/rollups/sha256.js"></script>
+  <script src="./assets/js/sdk/lib/CryptoJS/components/hmac.js"></script>
+  <script src="./assets/js/sdk/lib/CryptoJS/components/enc-base64.js"></script>
+  <script src="./assets/js/sdk/lib/url-template/url-template.js"></script>
+  <script src="./assets/js/sdk/lib/apiGatewayCore/sigV4Client.js"></script>
+  <script src="./assets/js/sdk/lib/apiGatewayCore/apiGatewayClient.js"></script>
+  <script src="./assets/js/sdk/lib/apiGatewayCore/simpleHttpClient.js"></script>
+  <script src="./assets/js/sdk/lib/apiGatewayCore/utils.js"></script>
+  <script src="./assets/js/sdk/apigClient.js"></script>
+</head>
+
+<body>
+  <div class="btn" id="go-back">
+      <button onclick="team()">
+        <img src="assets/images/vector.svg" alt="">
+        Profile
+      </button>
+  </div>
+  <div class="header-content">
+    <div class="wrapper">
+      <form onsubmit="submit_form(this); return false;">
+        <div class="form-wrapper">
+          <label for="description">Description: </label><br>
+          <textarea name="description" id="description" cols="30" rows="6" maxlength="200"></textarea>
+        </div>
+        <div class="btn">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    var sdk = apigClientFactory.newClient({
+      apiKey: "PcPItZ1OE54Zi0YroJUtk9rEeB9cD69h7CMGseE6"
+    });
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/edit_team.js"></script>
+</body>
+</html>

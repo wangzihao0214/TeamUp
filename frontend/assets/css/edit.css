@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Bold.ttf");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(180deg, rgba(252, 255, 86, 0.2) 0%, rgba(255, 106, 86, 0.2) 100%);
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+#go-back {
+  margin: 0 auto 0 20px;
+  height: 0;
+}
+
+#go-back button {
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+
+  width: 161px;
+  height: 59px;
+  background: linear-gradient(180deg, rgba(252, 255, 86, 0.2) 0%, rgba(255, 106, 86, 0.2) 100%);
+  border: 1px solid #FF6A56;
+  box-sizing: border-box;
+  border-radius: 40px;
+  justify-content: center;
+}
+
+#go-back img {
+  margin-right: 20px;
+}
+
+.header-content {
+  background-size: contain;
+  height: calc(100vh - 88px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper{
+  display: flex;
+  padding: 100px;
+  # width: 1200px;
+#  height: 847px;
+  align-items: center;
+  background: #FFFFFF;
+  background-size: contain;
+  box-shadow: 4px 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 5px;
+  margin: 0 auto;
+ # position: absolute;
+  bottom: 10px;
+  justify-content: center;
+
+}
+
+form{
+  justify-content: center;
+}
+
+.form-wrapper{
+  margin-bottom: 20px;
+}
+
+.form-wrapper input {
+  width: 100%;
+}
+
+form .btn {
+  width: 100%;
+  text-align: center;
+}
+
+form .btn button {
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+
+  width: 100px;
+  height: 50px;
+  background: linear-gradient(0deg, #FF6A56, #FF6A56);
+  border: 1px solid #FF6A56;
+  box-sizing: border-box;
+  border-radius: 40px;
+  justify-content: center;
+}
+
