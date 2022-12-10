@@ -3,10 +3,11 @@ import json
 from datetime import datetime
 from boto3.dynamodb.conditions import Key, Attr
 import boto3
+import os
 
 client_id = 'MjY3NTMxNzF8MTY1MTEwOTY4OS40MDg2MzU0'
 url = 'https://api.seatgeek.com/2'
-gmaps_key = 'AIzaSyA20R_pQff6KEIHRuKMTUH9GaI2H9QdAqg'
+gmaps_key = os.environ.get('gmap_key')
 
 # Processes an event returned by SeatGeek to our preferred format.
 def process_event(seatgeek_event):
